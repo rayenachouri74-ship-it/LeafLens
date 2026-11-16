@@ -1,0 +1,33 @@
+Reusing existing split: results/split.csv
+  train: 2380 {'aculus_olearius': 623, 'healthy': 735, 'olive_peacock_spot': 1022}
+  val: 511 {'aculus_olearius': 134, 'healthy': 158, 'olive_peacock_spot': 219}
+  test: 509 {'aculus_olearius': 133, 'healthy': 157, 'olive_peacock_spot': 219}
+Class weights (train): {'healthy': 1.0793651342391968, 'olive_peacock_spot': 0.77625572681427, 'aculus_olearius': 1.27340829372406}
+Initialised from checkpoints/frozen_best.pt
+Mode=finetuned pretrained=True lr=0.0001
+epoch 1: train loss 0.3021 acc 0.8824 | val loss 0.2229 acc 0.9276
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 2: train loss 0.2253 acc 0.9147 | val loss 0.1626 acc 0.9432
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 3: train loss 0.1751 acc 0.9294 | val loss 0.1312 acc 0.9472
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 4: train loss 0.1717 acc 0.9353 | val loss 0.1217 acc 0.9609
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 5: train loss 0.1382 acc 0.9462 | val loss 0.1094 acc 0.9628
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 6: train loss 0.1154 acc 0.9555 | val loss 0.1127 acc 0.9667
+  -> no improvement (patience 1/4)
+epoch 7: train loss 0.1051 acc 0.9601 | val loss 0.1005 acc 0.9706
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 8: train loss 0.1102 acc 0.9592 | val loss 0.0886 acc 0.9706
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 9: train loss 0.0930 acc 0.9681 | val loss 0.0914 acc 0.9746
+  -> no improvement (patience 1/4)
+epoch 10: train loss 0.0919 acc 0.9672 | val loss 0.0802 acc 0.9804
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 11: train loss 0.0887 acc 0.9647 | val loss 0.0772 acc 0.9765
+  -> new best checkpoint: checkpoints/finetuned_best.pt
+epoch 12: train loss 0.0728 acc 0.9668 | val loss 0.0930 acc 0.9726
+  -> no improvement (patience 1/4)
+History: results/history_finetuned.json
+Best checkpoint: checkpoints/finetuned_best.pt (val loss 0.0772)
