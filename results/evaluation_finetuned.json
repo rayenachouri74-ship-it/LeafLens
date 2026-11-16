@@ -1,0 +1,76 @@
+{
+  "checkpoint": "checkpoints/finetuned_best.pt",
+  "mode": "finetuned",
+  "n_test": 509,
+  "accuracy": 0.9607,
+  "macro_f1": 0.9611,
+  "per_class": {
+    "healthy": {
+      "precision": 0.9281,
+      "recall": 0.9873,
+      "f1": 0.9568,
+      "support": 157
+    },
+    "olive_peacock_spot": {
+      "precision": 0.9856,
+      "recall": 0.9361,
+      "f1": 0.9602,
+      "support": 219
+    },
+    "aculus_olearius": {
+      "precision": 0.9627,
+      "recall": 0.9699,
+      "f1": 0.9663,
+      "support": 133
+    }
+  },
+  "confusion_matrix": [
+    [
+      155,
+      1,
+      1
+    ],
+    [
+      10,
+      205,
+      4
+    ],
+    [
+      2,
+      2,
+      129
+    ]
+  ],
+  "confusion_labels": [
+    "healthy",
+    "olive_peacock_spot",
+    "aculus_olearius"
+  ],
+  "confidence_bands": [
+    {
+      "band": "0.90-1.00",
+      "n": 446,
+      "accuracy": 0.9888
+    },
+    {
+      "band": "0.75-0.90",
+      "n": 37,
+      "accuracy": 0.8649
+    },
+    {
+      "band": "0.60-0.75",
+      "n": 18,
+      "accuracy": 0.5556
+    },
+    {
+      "band": "<0.60",
+      "n": 8,
+      "accuracy": 0.75
+    }
+  ],
+  "uncertain_threshold": 0.6,
+  "n_uncertain": 8,
+  "uncertain_fraction": 0.0157,
+  "accuracy_on_confident_only": 0.9641,
+  "mean_inference_ms_per_image": 36.72
+}
