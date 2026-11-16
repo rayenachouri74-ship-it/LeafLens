@@ -1,0 +1,114 @@
+{
+  "mode": "frozen",
+  "pretrained": true,
+  "lr": 0.001,
+  "batch_size": 32,
+  "image_size": 128,
+  "seed": 42,
+  "train_counts": {
+    "healthy": 735,
+    "olive_peacock_spot": 1022,
+    "aculus_olearius": 623
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7192,
+      "train_acc": 0.7122,
+      "val_loss": 0.4697,
+      "val_acc": 0.8552,
+      "elapsed_s": 120.8
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4951,
+      "train_acc": 0.8235,
+      "val_loss": 0.4306,
+      "val_acc": 0.8571,
+      "elapsed_s": 237.7
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4388,
+      "train_acc": 0.8315,
+      "val_loss": 0.3626,
+      "val_acc": 0.8845,
+      "elapsed_s": 356.7
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.4048,
+      "train_acc": 0.8487,
+      "val_loss": 0.3428,
+      "val_acc": 0.8787,
+      "elapsed_s": 477.6
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.3998,
+      "train_acc": 0.8487,
+      "val_loss": 0.3495,
+      "val_acc": 0.8748,
+      "elapsed_s": 601.8
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3808,
+      "train_acc": 0.8563,
+      "val_loss": 0.3239,
+      "val_acc": 0.8845,
+      "elapsed_s": 724.3
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.3615,
+      "train_acc": 0.8651,
+      "val_loss": 0.3559,
+      "val_acc": 0.8689,
+      "elapsed_s": 846.6
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.3705,
+      "train_acc": 0.8584,
+      "val_loss": 0.3079,
+      "val_acc": 0.8865,
+      "elapsed_s": 974.0
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.3705,
+      "train_acc": 0.8592,
+      "val_loss": 0.3238,
+      "val_acc": 0.8787,
+      "elapsed_s": 1097.0
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.3527,
+      "train_acc": 0.8647,
+      "val_loss": 0.3203,
+      "val_acc": 0.8787,
+      "elapsed_s": 1216.1
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.3515,
+      "train_acc": 0.8634,
+      "val_loss": 0.3231,
+      "val_acc": 0.8787,
+      "elapsed_s": 1340.0
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.358,
+      "train_acc": 0.8651,
+      "val_loss": 0.3244,
+      "val_acc": 0.8826,
+      "elapsed_s": 1477.5
+    }
+  ],
+  "best_val_loss": 0.307920438727754,
+  "best_checkpoint": "checkpoints/frozen_best.pt",
+  "total_time_s": 1477.5
+}
