@@ -1,0 +1,9 @@
+Reusing existing split: results/split.csv
+  train: 2380 {'aculus_olearius': 623, 'healthy': 735, 'olive_peacock_spot': 1022}
+  val: 511 {'aculus_olearius': 134, 'healthy': 158, 'olive_peacock_spot': 219}
+  test: 509 {'aculus_olearius': 133, 'healthy': 157, 'olive_peacock_spot': 219}
+Class weights (train): {'healthy': 1.0793651342391968, 'olive_peacock_spot': 0.77625572681427, 'aculus_olearius': 1.27340829372406}
+Initialised from checkpoints/frozen_best.pt
+Mode=finetuned pretrained=True lr=0.0001
+epoch 1: train loss 0.3015 acc 0.8790 | val loss 0.2327 acc 0.9198
+  -> new best checkpoint: checkpoints/finetuned_best.pt
