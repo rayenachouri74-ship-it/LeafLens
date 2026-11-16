@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LeafLens — offline leaf-health triage (demo page)</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2em auto;padding:0 1em;line-height:1.5}code{background:#f0f0f0;padding:2px 5px}.warn{border:2px solid #b00;padding:1em}</style>
+</head>
+<body>
+<h1>LeafLens</h1>
+<p>Offline crop-leaf health <strong>triage</strong> — not a diagnosis.
+Three classes: healthy, olive peacock spot (<i>Spilocaea oleagina</i>),
+olive bud mite damage (<i>Aculus olearius</i>).</p>
+<div class="warn"><strong>Do not use this as a diagnosis, and never as a
+spray prescription.</strong> No pesticide dose is given here. If the
+result is uncertain or a disease is possible, check other leaves and
+ask an agronomist before spraying anything.</div>
+<h2>Try it (command line, offline once the model is downloaded)</h2>
+<pre><code>cd ~/workspace/projects/leaflens
+python3 predict.py &lt;photo.jpg&gt;
+python3 predict.py &lt;photo.jpg&gt; --lang fr</code></pre>
+<p>If the top probability is below 0.60, the output is
+<strong>UNCERTAIN</strong> instead of a forced class.</p>
+<h2>Real example predictions (fine-tuned model, held-out test images)</h2>
+<ul>
+<li>aculus test photo → <strong>aculus_olearius, 0.999</strong></li>
+<li>healthy test photo → <strong>healthy, 1.000</strong></li>
+<li>peacock-spot test photo → <strong>olive_peacock_spot, 1.000</strong></li>
+</ul>
+<p>Full numbers: test accuracy <strong>0.9607</strong>, macro-F1
+<strong>0.9611</strong> (n = 509, held-out). Frozen-backbone baseline:
+0.8723. See <code>RESULTS.md</code> for the confusion matrix — the
+main error is peacock spot called healthy (10 of 219) — and for the
+limits: Denizli photos only, plain backgrounds, 3 classes only, no
+field accuracy claimed.</p>
+<h2>Grad-CAM example</h2>
+<p><code>results/gradcam_example.png</code> is a real Grad-CAM blend for
+a correctly predicted aculus test image (confidence 0.999). The overlay
+is faint at 128&nbsp;px input resolution and is illustrative only.</p>
+</body>
+</html>
