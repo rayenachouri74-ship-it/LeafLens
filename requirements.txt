@@ -1,0 +1,8 @@
+torch>=2.0
+torchvision>=0.15
+Pillow>=10.0
+numpy>=1.26
+scikit-learn>=1.3
+# CPU-only install (as used here):
+# pip install --break-system-packages torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# pip install --break-system-packages -r requirements.txt
