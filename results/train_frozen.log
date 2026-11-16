@@ -1,0 +1,33 @@
+Split written: results/split.csv
+  train: 2380 {'healthy': 735, 'olive_peacock_spot': 1022, 'aculus_olearius': 623}
+  val: 511 {'healthy': 158, 'olive_peacock_spot': 219, 'aculus_olearius': 134}
+  test: 509 {'healthy': 157, 'olive_peacock_spot': 219, 'aculus_olearius': 133}
+Class weights (train): {'healthy': 1.0793651342391968, 'olive_peacock_spot': 0.77625572681427, 'aculus_olearius': 1.27340829372406}
+Mode=frozen pretrained=True lr=0.001
+epoch 1: train loss 0.7192 acc 0.7122 | val loss 0.4697 acc 0.8552
+  -> new best checkpoint: checkpoints/frozen_best.pt
+epoch 2: train loss 0.4951 acc 0.8235 | val loss 0.4306 acc 0.8571
+  -> new best checkpoint: checkpoints/frozen_best.pt
+epoch 3: train loss 0.4388 acc 0.8315 | val loss 0.3626 acc 0.8845
+  -> new best checkpoint: checkpoints/frozen_best.pt
+epoch 4: train loss 0.4048 acc 0.8487 | val loss 0.3428 acc 0.8787
+  -> new best checkpoint: checkpoints/frozen_best.pt
+epoch 5: train loss 0.3998 acc 0.8487 | val loss 0.3495 acc 0.8748
+  -> no improvement (patience 1/4)
+epoch 6: train loss 0.3808 acc 0.8563 | val loss 0.3239 acc 0.8845
+  -> new best checkpoint: checkpoints/frozen_best.pt
+epoch 7: train loss 0.3615 acc 0.8651 | val loss 0.3559 acc 0.8689
+  -> no improvement (patience 1/4)
+epoch 8: train loss 0.3705 acc 0.8584 | val loss 0.3079 acc 0.8865
+  -> new best checkpoint: checkpoints/frozen_best.pt
+epoch 9: train loss 0.3705 acc 0.8592 | val loss 0.3238 acc 0.8787
+  -> no improvement (patience 1/4)
+epoch 10: train loss 0.3527 acc 0.8647 | val loss 0.3203 acc 0.8787
+  -> no improvement (patience 2/4)
+epoch 11: train loss 0.3515 acc 0.8634 | val loss 0.3231 acc 0.8787
+  -> no improvement (patience 3/4)
+epoch 12: train loss 0.3580 acc 0.8651 | val loss 0.3244 acc 0.8826
+  -> no improvement (patience 4/4)
+Early stopping.
+History: results/history_frozen.json
+Best checkpoint: checkpoints/frozen_best.pt (val loss 0.3079)
