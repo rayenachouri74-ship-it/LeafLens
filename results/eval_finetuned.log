@@ -1,0 +1,16 @@
+Test n=509 accuracy=0.9607 macro-F1=0.9611
+  healthy: P=0.9281 R=0.9873 F1=0.9568 support=157
+  olive_peacock_spot: P=0.9856 R=0.9361 F1=0.9602 support=219
+  aculus_olearius: P=0.9627 R=0.9699 F1=0.9663 support=133
+Confusion matrix (rows=true, cols=predicted):
+             healthy olive_peacock_spot    aculus_olearius
+             healthy                155                  1                  1
+  olive_peacock_spot                 10                205                  4
+     aculus_olearius                  2                  2                129
+Confidence bands:
+  0.90-1.00: n=446 accuracy=0.9888
+  0.75-0.90: n=37 accuracy=0.8649
+  0.60-0.75: n=18 accuracy=0.5556
+  <0.60: n=8 accuracy=0.75
+Uncertain (top prob < 0.6): 8/509 (1.6%); accuracy on confident only: 0.9640718562874252
+Grad-CAM example saved: results/gradcam_example.png (true=aculus_olearius, predicted=aculus_olearius, conf=0.999)
